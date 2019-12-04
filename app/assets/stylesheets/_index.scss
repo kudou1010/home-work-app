@@ -1,0 +1,26 @@
+.messages {
+  width: calc(100vw - 600px);
+  height: 400px;
+  background-color: white;
+  margin: 30px auto;
+  
+  .default {
+    text-align: center;
+    line-height: 400px;
+  }
+} 
+
+.form {
+  width: calc(100vw - 600px);
+  height: 200px;
+  background-color: white;
+  margin: 0 auto;
+  
+  &__contentForm {
+
+  }
+
+  &__form__postBtn {
+
+  }
+}

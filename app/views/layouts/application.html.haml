@@ -8,16 +8,18 @@
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   %body
-  .header
-    .header__logo
-      = link_to "Homework App","#",class: "header__logo--text"
-    .header__right
-      = link_to "higuchi","#",class: "header__right--menu"
-      = link_to "ログアウト","#",class: "header__right--menu"
-      .header__right--menu
+    .header
+      .header__logo
+        = link_to "Homework App","#",class: "header__logo--text"
+      .header__right
+        = link_to "higuchi","#",class: "header__right--menu"
+        = link_to "ログアウト","#",class: "header__right--menu"
+        .header__right--menu
   
-  .footer
-    %p.footer__logo
-      Homework App 2019
+ 
 
     = yield
+
+    .footer
+      %p.footer__logo
+        Homework App 2019
