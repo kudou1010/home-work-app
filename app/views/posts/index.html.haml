@@ -7,7 +7,7 @@
         .message__name
           = post.user.name
         .message__date
-          = post.created_at
+          = post.created_at.strftime("%Y/%m/%d %R")
   - else
     .message.default
       まだ投稿はありません
