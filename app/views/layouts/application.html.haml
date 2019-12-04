@@ -8,10 +8,11 @@
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   %body
-  -# %header
-  -#   .header__logo
-  -#     = link_to "Homework App","#",class: "headerBtn"
-  -#   .header__right
-  -#     = link_to "higuchi","#",class: "headerBtn"
-  -#     = link_to "ログアウト","#",class: "headerBtn"
+  .header
+    .header__logo
+      = link_to "Homework App","#",class: "header__logo--text"
+    .header__right
+      = link_to "higuchi","#",class: "header__right--menu"
+      = link_to "ログアウト","#",class: "header__right--menu"
+      .header__right--menu
     = yield
