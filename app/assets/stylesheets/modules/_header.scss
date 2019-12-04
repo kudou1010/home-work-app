@@ -6,9 +6,9 @@ a {
   height:60px;
   background-color: skyblue;
   box-shadow: 0 2px darkgray;
-  font-family: "Avenir";
+  display:flex;
+  justify-content: space-between;
   &__logo {
-    float: left;
     line-height: 60px;
     padding-left: 300px;
 
@@ -19,7 +19,6 @@ a {
   }
 
   &__right {
-    float: right;
     line-height: 60px;
     padding-right: 300px;
 
