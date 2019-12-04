@@ -12,15 +12,22 @@
 
 .form {
   width: calc(100vw - 600px);
-  height: 200px;
+  height: 150px;
   background-color: white;
   margin: 0 auto;
+  text-align: center;
   
   &__contentForm {
-
+    width: calc(100% - 200px);
+    height: 80px;
+    margin: 5px 100px;
+    line-height: 20px;
   }
 
-  &__form__postBtn {
-
+  &__postBtn {
+    font-size: 20px;
+    background-color:#eee;
+    padding: 5px 10px;
+    margin: 0 10px;
   }
 }
