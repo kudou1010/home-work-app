@@ -6,3 +6,4 @@ class User < ApplicationRecord
 
   has_many :posts
 end
+rails haml:erb2haml
