@@ -1,8 +1,16 @@
 .messages
-  .message
-    .message__content
-    .message__name
-    .message__date
+  - if @posts.length > 0
+    = @posts.each do |post|
+      .message
+        .message__content
+          post.content
+        .message__name
+          post.user.name
+        .message__date
+          post.created_at
+  - else
+    .message.default
+      まだ投稿はありません
 
 .form
   .form__contentForm
