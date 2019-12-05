@@ -15,7 +15,8 @@
       .message.default
         まだ投稿はありません
 
-  .form
-    = form_for @post do |f|
-      = f.text_area :content, placeholder: "文字を入力(25文字以内)", maxlength: 25, class: "form__contentForm"
-      = f.submit "投稿する", class: "form__postBtn"
+  - if user_signed_in?
+    .form
+      = form_for @post do |f|
+        = f.text_area :content, placeholder: "文字を入力(25文字以内)", maxlength: 25, class: "form__contentForm"
+        = f.submit "投稿する", class: "form__postBtn"
