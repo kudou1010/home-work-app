@@ -11,6 +11,7 @@
   background-color: white;
   margin: 30px auto;
   overflow: scroll;
+  box-shadow: 0 2px darkgray;
 
   .message {
     height: 80px;
@@ -55,6 +56,9 @@
   background-color: white;
   margin: 0 auto;
   text-align: center;
+  box-shadow: 0 2px darkgray;
+  position: relative;
+  z-index: 1;
   
   &__contentForm {
     width: calc(100% - 200px);
