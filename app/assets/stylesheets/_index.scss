@@ -3,7 +3,40 @@
   height: 400px;
   background-color: white;
   margin: 30px auto;
+  overflow: scroll;
+
+  .message {
+    height: 80px;
+    margin: 10px 100px;
+    padding: 5px;
+    border: 1px solid #eee;
+    display:flex;
+    justify-content: space-between;
+    position: relative;
+
+    .leftMessage {
+      font-size: 20px;
+      line-height: 80px;
+
+      &__content {
+
+      }
+    }
+    .rightMessage {
+      font-size: 15px;
+      position: absolute;
+      right:5px;
+      bottom:5px;
+
+      &__name {
+
+      } 
+      &__date{
   
+      }
+    }
+
+  }
   .default {
     text-align: center;
     line-height: 400px;
@@ -12,15 +45,22 @@
 
 .form {
   width: calc(100vw - 600px);
-  height: 200px;
+  height: 150px;
   background-color: white;
   margin: 0 auto;
+  text-align: center;
   
   &__contentForm {
-
+    width: calc(100% - 200px);
+    height: 80px;
+    margin: 5px 100px;
+    line-height: 20px;
   }
 
-  &__form__postBtn {
-
+  &__postBtn {
+    font-size: 20px;
+    background-color:#eee;
+    padding: 5px 10px;
+    margin: 0 10px;
   }
 }

@@ -1,17 +1,20 @@
 .messages
   - if @posts.length > 0
-    = @posts.each do |post|
+    - @posts.each do |post|
       .message
-        .message__content
-          post.content
-        .message__name
-          post.user.name
-        .message__date
-          post.created_at
+        .leftMessage
+          .leftMessage__content
+            = post.content
+        .rightMessage
+          .rightMessage__name
+            = post.user.name
+          .rightMessage__date
+            = post.created_at.strftime("%Y/%m/%d %R")
   - else
     .message.default
       まだ投稿はありません
 
 .form
-  .form__contentForm
-  .form__postBtn
+  = form_for @post do |f|
+    = f.text_area :content, placeholder: "文字を入力(25文字以内)", maxlength: 25, class: "form__contentForm"
+    = f.submit "投稿する", class: "form__postBtn"
