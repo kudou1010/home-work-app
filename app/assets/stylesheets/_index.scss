@@ -3,7 +3,40 @@
   height: 400px;
   background-color: white;
   margin: 30px auto;
+  overflow: scroll;
+
+  .message {
+    height: 80px;
+    margin: 10px 100px;
+    padding: 5px;
+    border: 1px solid #eee;
+    display:flex;
+    justify-content: space-between;
+    position: relative;
+
+    .leftMessage {
+      font-size: 20px;
+      line-height: 80px;
+
+      &__content {
+
+      }
+    }
+    .rightMessage {
+      font-size: 15px;
+      position: absolute;
+      right:5px;
+      bottom:5px;
+
+      &__name {
+
+      } 
+      &__date{
   
+      }
+    }
+
+  }
   .default {
     text-align: center;
     line-height: 400px;
