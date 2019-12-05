@@ -2,12 +2,14 @@
   - if @posts.length > 0
     - @posts.each do |post|
       .message
-        .message__content
-          = post.content
-        .message__name
-          = post.user.name
-        .message__date
-          = post.created_at.strftime("%Y/%m/%d %R")
+        .leftMessage
+          .leftMessage__content
+            = post.content
+        .rightMessage
+          .rightMessage__name
+            = post.user.name
+          .rightMessage__date
+            = post.created_at.strftime("%Y/%m/%d %R")
   - else
     .message.default
       まだ投稿はありません
